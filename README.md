@@ -5,7 +5,7 @@
 </div>
 
 ## Welcome to the [MiniAiLive](https://www.miniai.live/)!
-A 100% spoofing-prevention rate for both 3D printed and resin facial masks, confirms MiniAiLive® as a leading facial recognition solution for preventing biometric fraud in remote applications, such as online banking, requiring identity verification before granting access to sensitive data or valuable assets. Feel free to use our MiniAI 3D Face Passive Liveness Detection (face anti-spoofing) Windows SDK.
+Check the likelihood that two faces belong to the same person. You will get a confidence score and thresholds to evaluate the similarity. Feel free to use our MiniAI Face Recognition Windows SDK.
 
 > **Note**
 >
@@ -89,9 +89,8 @@ A 100% spoofing-prevention rate for both 3D printed and resin facial masks, conf
        "image": "--base64 image data here--"
     }
 <div align="center">
-   <img width="600" alt="Screenshot 2024-07-16 at 5 11 34 AM" src="https://github.com/user-attachments/assets/a67ea9b2-985a-4623-9b90-bc8ac1ed5c11">
+   <img width="600" alt="Screenshot 2024-07-16 at 5 11 34 AM" src="https://github.com/user-attachments/assets/f4d422ad-0b98-4b3d-9f20-913132456923">
 </div>
-
 
 ### Response
 
