@@ -42,7 +42,7 @@ Check the likelihood that two faces belong to the same person. You will get a co
       <img src="https://github.com/user-attachments/assets/3438fa1c-f869-4ac0-85fc-762716da09bc" width="450" />
    </div>
 
-4. **Request License and Update:**
+3. **Request License and Update:**
 
    Run MIRequest.exe file to generate a license request file. You can find it here.
    
@@ -56,7 +56,7 @@ Check the likelihood that two faces belong to the same person. You will get a co
       <img src="https://github.com/user-attachments/assets/b1579722-462c-478a-9106-67b9a10b3514" width="300" />
    </div>
 
-6. **Verify Installation:**
+4. **Verify Installation:**
 
    After installation, verify that the On-premise Server is correctly installed by checking the task manager:
    <div align="center">
@@ -67,8 +67,11 @@ Check the likelihood that two faces belong to the same person. You will get a co
 
 ### Endpoint
 
-- `POST http://127.0.0.1:8083/api/face_detect` Face Detection API
+- `POST http://127.0.0.1:8083/api/face_detect` Face Detection, Face Attributes API
+- `POST http://127.0.0.1:8083/api/face_detect_base64` Face Detection, Face Attributes API
+  
 - `POST http://127.0.0.1:8083/api/face_match` Face Matching API
+- `POST http://127.0.0.1:8083/api/face_match_base64` Face Matching API
 
 ### Request
 
@@ -76,10 +79,7 @@ Check the likelihood that two faces belong to the same person. You will get a co
 - **Method:** `POST`
 - **Form Data:**
   - `image`: The image file (PNG, JPG, etc.) to be analyzed. This should be provided as a file upload.
-<div align="center">
-   <img width="600" alt="Screenshot 2024-07-16 at 5 12 01 AM" src="https://github.com/user-attachments/assets/4a68a0b9-3299-4793-a76c-e8b9c6a7ed99">
-</div>
-
+<img width="1049" alt="Screenshot 2024-07-16 at 5 12 01 AM" src="https://github.com/user-attachments/assets/e05be690-f474-4ad5-b800-ea64ee763461">
 
 - **URL:** `http://127.0.0.1:8083/api/face_detect_base64`
 - **Method:** `POST`
@@ -88,17 +88,15 @@ Check the likelihood that two faces belong to the same person. You will get a co
     {
        "image": "--base64 image data here--"
     }
-<div align="center">
-   <img width="600" alt="Screenshot 2024-07-16 at 5 11 34 AM" src="https://github.com/user-attachments/assets/f4d422ad-0b98-4b3d-9f20-913132456923">
-</div>
+<img width="1049" alt="Screenshot 2024-07-16 at 5 11 34 AM" src="https://github.com/user-attachments/assets/70c50c55-3c39-4885-ab9f-8e0c34e525f0">
 
 ### Response
 
-The API returns a JSON object with the detection result of the input face image. Here is an example response:
+The API returns a JSON object with the recognized details from the input Face image. Here is an example response:
    <div align="center">
-      <img src="https://github.com/user-attachments/assets/4a68a0b9-3299-4793-a76c-e8b9c6a7ed99" width="600" />
+      <img src="https://github.com/user-attachments/assets/e05be690-f474-4ad5-b800-ea64ee763461" />
    </div>
-   
+
 ## Gradio Demo
 
 We have included a Gradio demo to showcase the capabilities of our Face Recognition SDK. Gradio is a Python library that allows you to quickly create user interfaces for machine learning models.
@@ -160,6 +158,7 @@ try:
 except requests.exceptions.RequestException as e:
     print('An error occurred:', e)
 ```
+
 
 ## Request license
 Feel free to [Contact US](https://www.miniai.live/contact/)  to get a trial License. We are 24/7 online on WhatsApp: [+19162702374](https://wa.me/+19162702374).
