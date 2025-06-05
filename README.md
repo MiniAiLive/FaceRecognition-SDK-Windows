@@ -33,7 +33,7 @@ Check the likelihood that two faces belong to the same person. You will get a co
 
    Download the Server installer for your operating system from the following link:
    
-   [Download the On-premise Server Installer](https://drive.google.com/file/d/1-f5P444JJhNLsnfPuJsVWfM4jJE1n0hg/view?usp=sharing)
+   [Download the On-premise Server Installer](https://drive.google.com/file/d/1TZNy_4rBo1XD4_Q5yW4k7W9Wzu5lrhYn/view?usp=sharing)
 
 2. **Install the On-premise Server:**
 
